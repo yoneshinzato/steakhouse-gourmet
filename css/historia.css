@@ -1,0 +1,90 @@
+
+/* banner principal */
+
+.banner-principal {
+    background: url("../img/bg-historia.jpg") no-repeat center center;
+    background-size:cover;
+    height:auto;
+    background-attachment: fixed;
+}
+
+.banner-titulos {
+    margin:0 auto;
+    color:#fff;
+    text-align:center;
+    padding:7em 0;
+}
+
+/* HISTORIA */
+
+.historia {
+    margin:2em auto;
+}
+
+.historia-tudo {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+
+}
+
+.historia-tudo-p {
+    width:38%;
+    margin-right: 2%;
+    text-align: left;
+}
+
+.historia-tudo-img {
+    width:40%;
+}
+
+.historia-tudo-img img {
+    max-width:100%;
+}
+
+.historia-tudo-p-longo {
+    width:80%;
+    padding:1.25em;
+    margin:2em auto;
+    background:#f7f1e3;
+    box-sizing: border-box;
+}
+
+.historia-tudo-p-longo p {
+    margin:0;
+    padding:0;
+}
+
+.historia-mais {
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.historia-mais-img {
+    width:40%;
+}
+
+.historia-mais-img img {
+    max-width:100%;
+}
+
+.historia-mais-p {
+    width:38%;
+    margin-left: 2%;
+    text-align: left;
+}
+
+.imagem-longa {
+    width:80%;
+    margin:0 auto 2em auto;
+    text-align:Center;
+}
+
+.imagem-longa img {
+    max-width: 100%;
+}
+
+.imagem-longa h4 {
+    padding-top:2em;
+}

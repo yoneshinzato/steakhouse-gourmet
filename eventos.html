@@ -1,0 +1,174 @@
+<! DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>STEAK HOUSE GOURMET - the real taste</title> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="keywords" charset="restaurante, steak, steak house, carnes nobres, massas, frutos do mar">
+        <meta name="description" charset="Restaurante Especializado em Carnes, Frutos do Mar e Massas">
+        <meta name="author" charset="Yone Shinzato">
+        <meta name="generator" charset="Visual Studio Code">
+        
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/eventos.css">
+        <link rel="stylesheet" href="css/responsivo.css">
+        
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Roboto:400,700" rel="stylesheet">
+        
+        <!--ion icons-->
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" type="text/css">  
+        
+        <!-- Fontawesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+       
+        <!----------início do header e nav---------->
+        <header class="nav">
+        
+               <div class="logo">
+                    <a href="index.html"><img src="img/logo_golden.svg" alt="logo do restaurante" title="logo do Steak House Gourmet"></a>
+               </div>
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle">
+
+                <nav class="menu">
+                    <a href="historia.html">História</a>
+                    <a href="gastronomia.html">Gastronomia</a>
+                    <a href="reservas.html">Reservas</a>
+                    <a href="eventos.html" class="ativo">Eventos</a>
+                    <a href="noticias.html">Notícias</a>
+                    <a href="contato.html" id="sem-margem">Contato</a>
+                </nav>
+           
+        </header><!----------fim do header e nav---------->
+        
+        <!----------início do big-banner---------->
+        <section class="banner-principal">
+            <div class="container">
+               <div class="banner-titulos">
+                <h1>Eventos</h1>
+                <h3>Um brinde a uma ocasião tão especial merece ser realizado em um espaço como nosso restaurante</h3>
+               </div>
+            </div> 
+        </section><!----------fim do big-banner---------->
+        
+
+
+        <!-- -----------------------início da sessão eventos------------------- -->
+        <section class="eventos">
+          <div class="container">
+            <div class="eventos-um">
+                <article class="art-1">
+                        <img src="img/eventos-sociais.jpg" alt="foto de eventos sociais" title="eventos sociais">
+                        <h3>Eventos sociais</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rem culpa, a est voluptatem quasi officiis rerum fuga, odit, consequuntur ullam vitae expedita omnis! Minima eligendi magni praesentium totam error.</p>
+                </article>
+                <article class="art-2">
+                        <img src="img/eventos-corporativos.jpg" alt="foto de eventos corporativos" title="eventos corporativos">
+                        <h3>Eventos corporativos</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rem culpa, a est voluptatem quasi officiis rerum fuga, odit, consequuntur ullam vitae expedita omnis! Minima eligendi magni praesentium totam error.</p>
+                </article>
+            </div>
+
+            <div class="eventos-dois">
+              <article>
+                    <img src="img/eventos-casamento.jpg" alt="foto de cerimonial de casamneto" title="evento casamento">
+                    <h3>Casamentos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rem culpa, a est voluptatem quasi officiis rerum fuga, odit, consequuntur ullam vitae expedita omnis! Minima eligendi magni praesentium totam error.</p>
+                    <div id="classe">
+                            <h3>Interessou-se por nossos serviços? Entre em contato!</h3>
+                            <button id="modalBtn" class="botao">Solicitar orçamento</button>
+                    </div>
+
+                    <!-- O modal -->
+                    <div id="meuModal" class="modal">
+                        <div class="modal-conteudo">
+                            <span class="fecharBtn">&times;</span>
+
+                            <form action="#" method="post">
+                                <fieldset>
+                                    <h3>Orçamento</h3>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur delectus nulla distinctio, accusamus lorem ipsum dolor amet sit cacildis eits mussum hipster ommodi maxime, sit consectetur quos eveniet veritatis repellat.</p>
+
+                                    <div class="form-1">
+                                        <input type="text" placeholder="Nome Completo" id="nome" name="nome" required>
+                                        <input type="text" placeholder="Empresa" name="empresa" id="empresa">
+                                    </div>
+
+                                    <div class="form-1">
+                                            <input type="tel" placeholder="Telefone (celular)" name="tel" id="tel">
+                                            <input type="email" placeholder="Seu e-mail aqui" id="email" name="email" required>
+                                    </div>
+
+                                    <div class="form-1">
+                                            <input type="date" placeholder="Data" name="data" id="data" required>
+                                            <select id="selecao">
+                                                <option value="assunto">Período</option>
+                                                <option value="manha">Manhã</option>
+                                                <option value="tarde">Tarde</option>
+                                                <option value="noite">Noite</option>
+                                                <option value="outros">Outros</option>
+                                            </select>
+                                    </div>
+
+                                    <div>
+                                            <select class="convidados">
+                                                    <option value="convidados">Quantidade de Convidados</option>
+                                                    <option value="quantia1">10 ou +</option>
+                                                    <option value="quantia2">20 ou +</option>
+                                                    <option value="quantia3">30 ou +</option>
+                                                    <option value="quantia4">40 ou +</option>
+                                                    <option value="quantia5">50 ou +</option>
+                                                  </select>
+                                    </div>
+                                    <div><textarea cols="30" rows="10" id="mens" name="mens" placeholder="Digite sua mensagem"></textarea></div>
+                                    <div><input type="submit" value="Enviar"></div>
+
+
+
+
+                                </fieldset>
+                            </form>
+
+                        </div>
+                    </div> <!------------------------ fim do modal-------------------->
+              </article>
+            </div>
+
+          </div>
+        </section> <!-- fim da section eventos-->
+        
+        <!-- --------------início do footer--------------------- -->
+        <footer class="rodape">
+            <div class="rodape-items">
+               <div class="rodape-logo">
+                  <a href="index.html"><img src="img/logo_white.svg" alt="logo da Steak House Gurmet"></a> 
+               </div>
+               <div class="rodape-endereco">
+                   <p>Rua da Glória, 666 - Aclimação, SP
+                    <br>Tel.: (11) 9874-4561 - contato@steakhousegourmet.com.br</p>
+               </div>
+               <div class="rodape-redes-sociais">
+                  <ul>
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram-outline"></i></a></li>
+                  </ul> 
+               </div>
+               <div class="rodape-nav">
+                   <ul>
+                       <li><a href="contato.html">Contato</a></li>
+                       <li><a href="reservas.html">Reservas</a></li>
+                       <li><a href="carreiras.html">Carreiras</a></li>
+                   </ul>
+               </div>
+            </div>
+        </footer><!----------------fim do footer----------------------->
+        
+        <script src="js/main.js">
+
+        </script>
+    </body>
+</html>

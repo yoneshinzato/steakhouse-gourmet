@@ -1,0 +1,38 @@
+
+@media only screen and (max-width:864px) {
+    label{
+        display:block;
+        cursor:pointer;
+    }
+
+    .menu {
+        text-align:center;
+        width:100%;
+        display:none;
+        background:#000;
+        z-index:9999;
+        position:absolute;
+    }
+
+    .menu a {
+        display:block;
+        border-bottom: thin solid #EAB543;
+        margin:0;
+        
+    }
+
+    #toggle:checked + .menu {
+        display:block;
+    
+    }
+
+}
+
+
+
+
+
+
+
+
+}

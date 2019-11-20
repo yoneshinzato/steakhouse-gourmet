@@ -1,0 +1,194 @@
+/* banner principal */
+
+.banner-principal {
+    background: url("../img/bg-carreira.jpg") no-repeat center center;
+    background-size:cover;
+    max-width:100%;
+    height:auto;
+    background-attachment: fixed;
+}
+
+.banner-titulos {
+    margin:0 auto;
+    color:#fff;
+    text-align:center;
+    padding:7em 0;
+}
+
+
+.carreiras-geral {
+	display:flex;
+	justify-content: flex-start;
+    flex-wrap:wrap;
+    align-content: flex-start;
+}
+
+.carreira {
+    width:50%;
+
+}
+
+/* para estilizar o botão */
+button.colapsar {
+box-sizing: border-box;
+  cursor: pointer;
+  padding: 1.5em;
+  width: 98%;
+  margin:2em auto 0 auto;
+  text-align: left;
+  font-size: 1em;
+  background:#bb6804;
+  transition: all 1s;
+  color:#fff;
+  
+}
+
+/*adicionando botão de +*/
+
+.colapsar:after {
+    content: '\02795'; 
+    font-size: 1em;
+    color: #fff;
+    float: right;
+    margin-left: 2%;
+}
+
+.active:after {
+    content: "\2796";
+}
+
+
+/* Aadicionar cor de botão para quando for clicado */
+.active, .colapsar:hover {
+  background-color: #a05a04;
+}
+
+/* estilizar conteúdo que está escondido */
+.carreira-conteudo {
+  padding-right:1em;
+  padding-left:1em;
+  background-color: #f7f1e3;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width:98%;
+  box-sizing: border-box;
+  margin-bottom:2em;
+
+}
+
+.carreira-conteudo h4 {
+	text-align: left;
+	font-weight: bold;
+	margin-bottom:0;
+	margin-top:1.5em;
+}
+
+/*botão para enviar currículos*/
+
+.button {
+    text-transform:uppercase;
+    background:#bb6804;
+    padding:1em 1.5em;
+    border-radius:51px;
+    color:#fff;
+    transition: all 1s;
+    margin-top:1em;
+    margin: 0 auto 2em auto;
+    text-align:center;
+}
+
+.button:hover {
+    background:#a05a04;
+    cursor:pointer;
+}
+
+/*modal de carreira*/
+
+.modal {
+	display:none;
+	position:fixed;
+	z-index: 1;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0,0.5);
+
+
+}
+
+.modal-content {
+	background-color: #fff;
+	margin:30% auto;
+	padding:1.5em;
+	width:50%;
+	box-shadow: 0 5px  8px 0 rgba(0,0,0,0.2), 0 7px  20px 0 rgba(0,0,0,0.2);
+	animation-name: modalopen;
+	animation-duration: 1s;
+}
+
+.closeBtn {
+	float:right;
+	color:#ccc;
+	font-size:2em;
+	transition: all 1s;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+	color: #000;
+	text-decoration:none;
+	cursor: pointer;
+}
+
+@keyframes modalopen {
+	from{opacity:0;}
+	to{opacity:1;}
+}
+
+textarea {
+    width:100%;
+    padding:1em;
+    margin:1em 0;
+	background:#fff;
+    border-radius:0.5em;
+    
+}
+
+.form-campo2 {
+    display:flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+
+.form-campo2 input[type=tel],
+.form-campo2 input[type=email],
+.form-campo2 input[type=text] {
+    width:50%;
+	padding:1em 0.2em 1em 1em;
+	margin:1em 0;
+	background:#fff;
+    border-radius:0.5em;
+}
+
+
+/* enviar dados */
+.enviar-dados {
+    text-align:center;
+    margin:2em auto;
+}
+
+.enviar-dados button {
+    margin:2em auto;
+}
+
+.form-campo3 {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.form-campo3 button.btn-botao {
+    margin-right:2em;
+}

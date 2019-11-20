@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Roboto:400,700');
+
+/*Estilos gerais*/
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    font-size:16px;
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size:2.5em;
+    font-weight: 700;
+    padding-bottom:0.5em;
+    line-height:1.625;
+    text-align:center;
+}
+
+h2 {
+    font-size:2em;
+    line-height:2em;
+    
+}
+
+h3 {
+    font-size:1.5em;
+    font-style: italic;
+    line-height: 1.5em;
+}
+
+h4 {
+    font-size:1.25em;
+    font-style: italic;
+    padding-bottom:1em;
+    margin-bottom:1em;
+    line-height:1em;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+p {
+    font-size:1em;
+    padding-bottom:1.5em;
+    line-height:1.5em;
+    font-weight:normal;
+}
+a {
+    font-size:1em;
+    list-style-type: none;
+    text-decoration: none;
+    text-align:center;
+}
+
+.container {
+    width:90%;
+    max-width:1440px;
+    margin:0 auto;
+}
+
+a.botao  {
+    text-transform:uppercase;
+    background:#bb6804;
+    padding:1em 1.5em;
+    border-radius:51px;
+    color:#fff;
+    transition: all 1s;
+    margin-top:1em;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+a.botao:hover {
+    background:#a05a04;
+}
+
+/*----------------------------estilos de header e nav------------------------*/
+
+.nav {
+    border-bottom: 1px solid #EAB543;
+    height:5em;
+    line-height: 5em;
+    background: #000;
+    text-align:right;
+}
+
+.logo {
+    width:150px;
+    float:left;
+    display:block;
+    margin-top:1em;
+    margin-left:5%;
+}
+
+.menu {
+    float:right;
+    margin-right:5%;
+
+}
+
+.menu a {
+    color:#EAB543;
+    margin: 0 1.825em 0 0;
+    line-height: 5em;
+    clear:right;
+    transition: all 1s ease-out;
+}
+
+.menu a:hover {
+    color:yellow;
+}
+
+.menu a.ativo {
+    color:yellow;
+    font-weight: bold;
+}
+
+label {
+    margin: 0 1.625em 0 0;
+    font-size:1.625em;
+    line-height: 3em;
+    color:#EAB543;
+    font-weight: bold;
+    display:none;
+}
+#sem-margem {
+    margin-right:0;
+}
+
+#toggle {
+    display:none;
+}
+
+
+/*--------------------------------seção top slider----------------------------*/
+
+.topSlider {
+    display:block;
+    width: 100%;
+    height:100%;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    position: relative; 
+    margin-left:0;
+  }
+  
+    .topSlider span {
+      position: absolute;
+      color: white;
+      z-index: 1;
+      top: 40%;
+      left: 50%;
+      width:90%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center; 
+    }
+  
+      .topSlider span h1 { 
+        text-transform: uppercase;
+        padding-bottom:0.5em;
+        color:#fff;
+        line-height:1.625;
+      }
+  
+      .topSlider span h3 {
+        padding-bottom:1em;
+        margin-bottom:1em;
+        color:#fff;
+        line-height:1.5em;
+        width:80%;
+        margin-left:auto;
+        margin-right:auto;
+      }
+
+      .topSlider span a {
+        text-transform:uppercase;
+        background:#bb6804;
+        padding:1em 1.5em;
+        border-radius:51px;
+        color:#fff;
+        transition: all 1s;
+    }
+    
+    .topSlider a:hover {
+        background:#a05a04;
+    }
+  
+    .topSlider .slide {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      -webkit-animation: slide 10s infinite;
+      animation: slide 10s infinite;
+      overflow: hidden; 
+    }
+  
+    .topSlider .slide:nth-child(2) {
+      left: 0%;
+      -webkit-animation-delay: -0.5s;
+      animation-delay: -0.5s;
+      background-image:url(../img/bg-home1.jpg);
+      background-size: cover;
+      background-position: center;
+     }
+  
+    .topSlider .slide:nth-child(3) {
+      left: 100%;
+      -webkit-animation-delay: 2s;
+      animation-delay: 2s;
+      background-image: url(../img/bg-home2.jpg);
+      background-size: cover;
+      background-position: center; 
+    }
+  
+    .topSlider .slide:nth-child(4) {
+      left: 100%;
+      -webkit-animation-delay: 4.5s;
+      animation-delay: 4.5s;
+      background-image:  url(../img/bg-home3.jpg);
+      background-size: cover;
+      background-position: center; 
+    }
+  
+    .topSlider .slide:nth-child(5) {
+      left: 100%;
+      -webkit-animation-delay: 7s;
+      animation-delay: 7s;
+      background-image: url(../img/bg-home5.jpg);
+      background-size: cover;
+      background-position: center; 
+    }
+   
+  
+  @-webkit-keyframes slide {
+    0% {
+      left: 100%;
+      width: 100%; 
+    }
+  
+    5% {
+      left: 0%; 
+    }
+  
+    25% {
+      left: 0%; 
+    }
+  
+    30% {
+      left: -100%;
+      width: 100%; 
+    }
+  
+    31% {
+      left: -100%;
+      width: 0%; 
+    }
+  
+    100% {
+      left: 100%;
+      width: 0%; 
+    } 
+  
+    }
+  
+  @keyframes slide {
+    0% {
+      left: 100%;
+      width: 100%; 
+    }
+  
+    5% {
+      left: 0%; 
+    }
+  
+    25% {
+      left: 0%; 
+    }
+  
+    30% {
+      left: -100%;
+      width: 100%; 
+    }
+  
+    31% {
+      left: -100%;
+      width: 0%; 
+    }
+    
+    100% {
+      left: 100%;
+      width: 0%;
+     } 
+    }
+
+    /* fim da sessão top slider */
+  
+
+/* seção siga-nos */
+
+.siga-nos {
+  padding-top:3em;
+  padding-bottom:3em;
+}
+
+.siga-nos h3 {
+    text-align:center;
+    padding-bottom:1.5em;
+}
+
+.formas-todas {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+article.quatro-formas {
+    width:23%;
+    margin-right:2%;
+}
+
+.quatro-formas img, .quatro-formas-alt img {
+    max-width:100%;
+}
+
+article.quatro-formas-alt {
+    width:23%;
+}
+
+
+
+/* rodape footer */
+
+.rodape {
+    background:#a05a04; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    color:#fff;
+}
+
+footer.rodape-items {
+    display:flex;
+}
+
+.rodape-logo {
+    padding-top:2em;
+}
+
+.rodape-logo img {
+    width:130px;
+    height:auto;
+    padding-bottom:1.5em;
+}
+
+.rodape-endereco {
+    line-height:1.5em;
+    font-size:0.8em
+}
+
+.rodape-redes-sociais ul {
+    display:flex;
+    justify-content: center;
+    padding:1em;
+}
+
+.rodape-redes-sociais ul li a  {
+    padding:1em 1em 0 1em;
+    color:#fff;
+    font-size:1.5em;
+    transition: all 1s;
+}
+
+.rodape-nav ul {
+    display:flex;
+    justify-content: center;
+}
+
+
+.rodape-nav ul li a {
+    display:block;
+    padding:0 1em 1.5em 1em;
+    color:#fff;
+    transition: all 1s;
+    text-decoration: underline;
+}
+
+.rodape-nav ul li a:hover, .rodape-redes-sociais ul li a:hover {
+    color:yellow;
+    text-decoration: none;
+}
